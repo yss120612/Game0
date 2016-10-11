@@ -15,6 +15,7 @@ public class Yss1Game extends Game {
 	@Override
 	public void create () {
 		scrMenu=new ScrMenu(this);
+		scrGame=new ScrMenu(this);
 		batch1 = new SpriteBatch();
 		img1 = new Texture("badlogic.jpg");
 		setScreen(scrMenu);
