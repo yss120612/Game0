@@ -9,13 +9,13 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class Yss1Game extends Game {
-	SpriteBatch batch;
+	SpriteBatch batch1;
 	Texture img1;
 	Screen scrMenu,scrGame;
 	@Override
 	public void create () {
 		scrMenu=new ScrMenu(this);
-		batch = new SpriteBatch();
+		batch1 = new SpriteBatch();
 		img1 = new Texture("badlogic.jpg");
 		setScreen(scrMenu);
 	}
@@ -24,7 +24,7 @@ public class Yss1Game extends Game {
 	
 	@Override
 	public void dispose () {
-		batch.dispose();
+		batch1.dispose();
 		img1.dispose();
 	}
 }

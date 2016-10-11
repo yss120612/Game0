@@ -25,9 +25,9 @@ public class ScrMenu implements Screen {
     public void render(float delta) {
         Gdx.gl.glClearColor(1, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        game.batch.begin();
-        game.batch.draw(game.img1, 0, 0);
-        game.batch.end();
+        game.batch1.begin();
+        game.batch1.draw(game.img1, 0, 0);
+        game.batch1.end();
     }
 
     @Override
