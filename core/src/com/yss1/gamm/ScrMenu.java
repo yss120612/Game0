@@ -4,6 +4,8 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 
 /**
  * Created by a0804 on 11.10.2016.
@@ -11,10 +13,13 @@ import com.badlogic.gdx.graphics.GL20;
 
 public class ScrMenu implements Screen {
     private Yss1Game game;
-
+    private TextButton bG;
+    private Skin bSkin;
     public ScrMenu(Game game)
     {
         this.game=(Yss1Game)game;
+        bSkin=new Skin();
+        bG=new TextButton("Huuu",bSkin);
     }
     @Override
     public void show() {

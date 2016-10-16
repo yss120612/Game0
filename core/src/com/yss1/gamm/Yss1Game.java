@@ -25,6 +25,7 @@ public class Yss1Game extends Game {
 	
 	@Override
 	public void dispose () {
+		super.dispose();
 		batch1.dispose();
 		img1.dispose();
 	}
